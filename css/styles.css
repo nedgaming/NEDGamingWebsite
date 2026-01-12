@@ -12779,6 +12779,17 @@ section {
   display: none;
 }
 
+/* Reduce border radius on mobile */
+@media (max-width: 767px) {
+  .device[data-device=modern][data-orientation=portrait][data-color=black] {
+    border-radius: 20px;
+  }
+
+  .device[data-device=modern][data-orientation=portrait][data-color=black] .screen {
+    border-radius: 16px;
+  }
+}
+
 section.cta {
   position: relative;
   padding: 15rem 0;
