@@ -1,0 +1,193 @@
+/* ==========================================================================
+   Privacy Policy and Delete Account (load after home, help and post css)
+   ========================================================================== */
+
+/* ---------- Privacy Policy ---------- */
+
+.legal {
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+
+.legal h2 {
+  scroll-margin-top: 100px;
+  font-size: clamp(1.3rem, 2.2vw, 1.6rem);
+}
+
+.legal h3 {
+  font-size: 1.1rem;
+}
+
+.legal ul {
+  padding-left: 22px;
+}
+
+.legal ul li + li {
+  margin-top: 0.6em;
+}
+
+.in-short {
+  padding: 14px 18px;
+  border-radius: 14px;
+  background: var(--paper-2);
+  color: var(--ink);
+}
+
+/* Table of contents */
+.toc {
+  padding: 24px 26px;
+  border-radius: 20px;
+  background: var(--paper-2);
+}
+
+.toc h2 {
+  margin-top: 0 !important;
+  font-size: 1.1rem !important;
+}
+
+.toc ol {
+  margin-top: 12px;
+  padding-left: 24px;
+  display: grid;
+  gap: 6px;
+  font-size: 0.97rem;
+}
+
+.toc a {
+  color: var(--ink-2) !important;
+  text-decoration: none !important;
+}
+
+.toc a:hover {
+  color: var(--ink) !important;
+  text-decoration: underline !important;
+}
+
+/* ---------- Delete Account ---------- */
+
+.delete-lede {
+  max-width: 520px;
+  margin-top: 14px;
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  color: var(--grey);
+}
+
+.delete-wrap {
+  max-width: 1000px;
+  padding-top: clamp(40px, 6vw, 64px);
+  padding-bottom: clamp(64px, 9vw, 110px);
+}
+
+.callout--warn {
+  max-width: 640px;
+  margin: 0 auto;
+  background: #fff0ee;
+}
+
+.x-list {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.x-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink);
+}
+
+.x-list li::before {
+  content: "×";
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #e5484d;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.delete-steps__title {
+  margin-top: clamp(56px, 8vw, 88px);
+  text-align: center;
+  font-size: clamp(1.8rem, 3.6vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.delete-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(20px, 3vw, 32px);
+  margin-top: 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.delete-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.delete-step__phone {
+  width: min(250px, 70vw);
+}
+
+.delete-step__phone .phone__screen img {
+  object-position: top;
+}
+
+.delete-step__text {
+  margin-top: 24px;
+  max-width: 280px;
+}
+
+.delete-step__num {
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.delete-step h3 {
+  margin-top: 12px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+.delete-step p {
+  margin-top: 6px;
+  color: var(--grey);
+}
+
+.delete-step p strong {
+  color: var(--ink);
+}
+
+.delete-help {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 860px) {
+  .delete-steps {
+    grid-template-columns: 1fr;
+    gap: 56px;
+  }
+}

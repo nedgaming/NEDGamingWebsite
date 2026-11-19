@@ -1,0 +1,231 @@
+/* ==========================================================================
+   Help Center (loads after home.css and reuses its tokens, nav and footer)
+   ========================================================================== */
+
+/* ---------- Hero ---------- */
+
+.help-hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(120px, 15vw, 160px) 0 clamp(40px, 6vw, 64px);
+  text-align: center;
+}
+
+.help-hero__topo {
+  position: absolute;
+  left: 50%;
+  top: 40px;
+  width: min(1200px, 160vw);
+  max-width: none;
+  transform: translateX(-50%);
+  opacity: 0.9;
+  pointer-events: none;
+  -webkit-mask-image: radial-gradient(60% 60% at 50% 50%, #000 40%, transparent 100%);
+  mask-image: radial-gradient(60% 60% at 50% 50%, #000 40%, transparent 100%);
+}
+
+.help-hero__inner {
+  position: relative;
+}
+
+.help-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.help-kicker span {
+  color: var(--grey-2);
+  letter-spacing: 2px;
+}
+
+.help-hero__title {
+  margin-top: clamp(40px, 6vw, 64px);
+  font-size: clamp(2.4rem, 5.4vw, 3.6rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+
+.help-hero__lede {
+  margin-top: 10px;
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  color: var(--grey);
+}
+
+.help-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 560px;
+  margin: clamp(36px, 5vw, 56px) auto 0;
+  border-radius: 999px;
+  background: var(--paper-2);
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.help-search:focus-within {
+  background: #fff;
+  box-shadow: 0 0 0 2px var(--ink), 0 12px 30px -12px rgba(0, 0, 0, 0.2);
+}
+
+.help-search svg {
+  position: absolute;
+  left: 18px;
+  width: 18px;
+  height: 18px;
+  color: var(--grey);
+  pointer-events: none;
+}
+
+.help-search input {
+  width: 100%;
+  padding: 14px 20px 14px 46px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  font: inherit;
+  font-size: 1rem;
+  color: var(--ink);
+  outline: none;
+}
+
+.help-search input::placeholder {
+  color: var(--grey);
+}
+
+/* ---------- Question list ---------- */
+
+.help-body {
+  max-width: 760px;
+  padding-bottom: clamp(60px, 8vw, 100px);
+}
+
+.help-cat {
+  margin-top: clamp(40px, 6vw, 64px);
+}
+
+.help-cat h2 {
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+
+.qa summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 9px 0;
+  list-style: none;
+  cursor: pointer;
+  font-size: 1.05rem;
+  color: var(--ink);
+}
+
+.qa summary::-webkit-details-marker {
+  display: none;
+}
+
+.qa summary:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Chevron */
+.qa summary::after {
+  content: "";
+  flex: none;
+  width: 8px;
+  height: 8px;
+  margin-right: 6px;
+  border-right: 2px solid var(--grey-2);
+  border-bottom: 2px solid var(--grey-2);
+  transform: rotate(45deg) translateY(-3px);
+  transition: transform 0.3s var(--ease), border-color 0.2s;
+}
+
+.qa[open] summary::after {
+  transform: rotate(-135deg) translateY(-3px);
+  border-color: var(--ink);
+}
+
+.qa[open] summary {
+  font-weight: 600;
+}
+
+.qa__a {
+  padding: 4px 0 18px;
+  color: var(--ink-2);
+  max-width: 64ch;
+}
+
+.qa[open] .qa__a {
+  animation: qa-in 0.35s var(--ease);
+}
+
+@keyframes qa-in {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+}
+
+.qa__a p + p,
+.qa__a ol + p,
+.qa__a p + ol {
+  margin-top: 12px;
+}
+
+.qa__a ol {
+  padding-left: 22px;
+  list-style: decimal;
+  display: grid;
+  gap: 6px;
+}
+
+.qa__a a,
+.help-empty a,
+.help-more a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.qa:target summary {
+  font-weight: 600;
+}
+
+.help-empty {
+  margin-top: 48px;
+  color: var(--grey);
+  text-align: center;
+}
+
+.help-more {
+  margin-top: clamp(56px, 8vw, 88px);
+  padding: clamp(24px, 4vw, 36px);
+  border-radius: 24px;
+  background: #fff1ec;
+}
+
+.help-more h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.help-more p {
+  margin-top: 10px;
+  color: var(--ink-2);
+}
+
+/* Smaller closing title than the homepage */
+.finale__title--sm {
+  font-size: clamp(1.8rem, 3.6vw, 2.6rem);
+}

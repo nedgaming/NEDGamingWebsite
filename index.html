@@ -8,446 +8,761 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-QVGZ369790');
     </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9733133097462328"
-    crossorigin="anonymous"></script>
-
+        crossorigin="anonymous"></script>
 
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Senchou - ESports Database</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/logo_small.png" />
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Senchou: The Esports Scoring App for Players and Organisers</title>
+    <meta name="description"
+        content="Register your team, score scrims and tournaments live, and keep every stat forever. Senchou is the free esports scoring app for players and organisers on Android and iOS." />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nedgaming.com/" />
+    <meta property="og:title" content="Senchou: Every match. Every stat. Forever." />
+    <meta property="og:description"
+        content="The free esports scoring app for players and organisers. Register teams, score matches live and build a profile that proves how good you are." />
+    <meta property="og:image" content="https://nedgaming.com/assets/img/sc_7.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="assets/img/logo_small.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
-        rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="preload" as="image" href="assets/img/app/hero-hand.webp" />
+    <link href="css/home.css" rel="stylesheet" />
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-        <div class="container px-5">
-            <a href="index.html"><img src="assets/img/web_logo.png" style="height: 40px;"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="bi-list"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="blog.html">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="contact.html">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3"
-                            href="https://nedgamingai.lemonsqueezy.com" target="_blank"
-                            rel="noopener noreferrer">Store</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3"
-                            href="https://nedgamingai.lemonsqueezy.com/affiliates" target="_blank"
-                            rel="noopener noreferrer">Affiliates</a></li>
-                </ul>
-                <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal"
-                    data-bs-target="#feedbackModal" style="background-color: #ED9B05;">
-                    <span class="d-flex align-items-center">
-                        <i class="bi-chat-text-fill me-2"></i>
-                        <span class="small">Send Feedback</span>
-                    </span>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Floating pill nav -->
+    <header class="nav" data-nav>
+        <div class="nav__pill">
+            <a href="index.html" class="nav__logo" aria-label="Senchou home">
+                <img class="nav__logo-on-light" src="assets/img/web_logo.png" alt="Senchou" width="457" height="109" />
+                <img class="nav__logo-on-dark" src="assets/img/app/logo-light.png" alt="" width="457" height="109" />
+            </a>
+            <nav id="nav-menu" class="nav__menu" aria-label="Main">
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="help.html">Help Center</a>
+                <a href="contact.html">Contact</a>
+                <a href="https://nedgamingai.lemonsqueezy.com" target="_blank" rel="noopener noreferrer">Store</a>
+            </nav>
+            <div class="nav__end">
+                <a href="#download" class="nav__cta">Get the app
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5" /><path d="M11 18.5h2" /></svg>
+                </a>
+                <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" data-nav-toggle>
+                    <span class="nav__toggle-bars" aria-hidden="true"></span>
+                    <span class="visually-hidden">Menu</span>
                 </button>
             </div>
         </div>
-    </nav>
-    <!-- Mashead header-->
-    <header class="masthead" style="background-color: #0d152d;">
-        <div class="container px-5">
-            <div class="row gx-5 align-items-center">
-                <div class="col-lg-6">
-                    <!-- Mashead text and app badges-->
-                    <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                        <img style="height: 4rem; margin-bottom: 15px;" src="assets/img/play_store_icon.png"
-                            alt="..." />
-                        <h1 class="display-1 lh-1 mb-3 text-white">Let's <br><span class="gradient-text">mainstream gaming.</span></h1>
-                        <p class="lead fw-normal text-white  mb-5">Senchou is the new-age fastest growing E-Sports
-                            Database for players all around the world.</p>
-                        <div class="d-flex flex-column flex-lg-row align-items-center">
-                            <a target="_blank" class="me-lg-3 mb-4 mb-lg-0"
-                                href="https://play.google.com/store/apps/details?id=com.ned.ned&pli=1"><img
-                                    class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
-                            <a target="_blank" href="https://apps.apple.com/ca/app/senchou/id6741138914"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <!-- Masthead device mockup feature-->
-                    <div class="masthead-device-mockup">
-                        <div class="device-wrapper">
-                            <div class="device" data-device="modern" data-orientation="portrait" data-color="black">
-                                <div class="screen bg-black">
-                                    <img src="assets/img/main_screenshot.jpg" style="width: 100%; height: 100%; object-fit: cover" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="device-wrapper">
-                            <div class="device" data-device="modern" data-orientation="portrait" data-color="black">
-                                <div class="screen bg-black">
-                                    <img src="assets/img/secondary_sc.jpg" style="width: 100%; height: 100%; object-fit: cover" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </header>
-    <!-- Quote/testimonial aside-->
-    <aside class="text-center ">
-        <div class="container px-5">
-            <div class="row gx-5 justify-content-center">
-                <div class="col-xl-8">
-                    <div class="h2 fs-1  mb-4">"Senchou is a pioneering player in the gaming industry, committed to
-                        delivering innovative solutions that enrich the Gaming Experience."</div>
-                    <a target="_blank"
-                        href="https://m.dailyhunt.in/news/india/english/manish+bhattacharjee-epaper-dh77312861ca7544bb8e8b3f3d9cf342d0/empowering+gamers+and+organizers+ned+gaming+introduces+senchou+app-newsid-dh77312861ca7544bb8e8b3f3d9cf342d0_1fe70a003ce011eeb7bc5a2227aebefa?sm=Y"><img
-                            src="assets/img/dailyhunt_logo.svg" alt="..." style="height: 3rem" /></a>
+
+    <!-- Bottom stage switcher -->
+    <nav class="stagebar" aria-label="Jump to a match stage" data-stagebar>
+        <a href="#step-before" data-tab="before">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V4h11l-2 4 2 4H5" /></svg>
+            <span>Before<span class="tab-long"> the match</span></span></a>
+        <a href="#step-during" data-tab="during">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="8" /><path d="M12 9v4l2.5 2.5M9.5 2.5h5" /></svg>
+            <span>During<span class="tab-long"> the match</span></span></a>
+        <a href="#step-after" data-tab="after">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4ZM7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4" /></svg>
+            <span>After<span class="tab-long"> the match</span></span></a>
+        <a href="#download" data-tab="download">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14" /></svg>
+            <span>Download</span></a>
+    </nav>
+
+    <main id="main">
+
+        <!-- Hero (light) -->
+        <section class="hero">
+            <div class="container hero__copy">
+                <h1 class="hero__title" data-reveal>Every match. Every stat.<br /> Forever.</h1>
+                <p class="hero__lede" data-reveal style="--d: 1">The only app you need to register your team, score
+                    scrims and tournaments live, and build a player profile that proves how good you really are.
+                    Built for players, simple enough for every organiser.</p>
+                <div class="badges" data-reveal style="--d: 2">
+                    <a href="https://play.google.com/store/apps/details?id=com.ned.ned" target="_blank"
+                        rel="noopener"><img src="assets/img/google-play-badge.svg" alt="Get it on Google Play"
+                            width="150" height="45" /></a>
+                    <a href="https://apps.apple.com/ca/app/senchou/id6741138914" target="_blank"
+                        rel="noopener"><img src="assets/img/app-store-badge.svg" alt="Download on the App Store"
+                            width="135" height="45" /></a>
+                </div>
+                <svg width="0" height="0" class="visually-hidden" aria-hidden="true">
+                    <symbol id="laurel" viewBox="0 0 24 56">
+                        <path d="M18 54 C8 46 4 30 10 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+                        <g fill="currentColor" stroke="none">
+                            <ellipse cx="13" cy="48" rx="2.6" ry="5.6" transform="rotate(-62 13 48)" />
+                            <ellipse cx="8.6" cy="40" rx="2.6" ry="5.6" transform="rotate(-48 8.6 40)" />
+                            <ellipse cx="6.4" cy="31" rx="2.6" ry="5.6" transform="rotate(-30 6.4 31)" />
+                            <ellipse cx="6.2" cy="22" rx="2.5" ry="5.4" transform="rotate(-14 6.2 22)" />
+                            <ellipse cx="7.6" cy="13" rx="2.4" ry="5" transform="rotate(4 7.6 13)" />
+                            <ellipse cx="15" cy="41" rx="2.2" ry="4.6" transform="rotate(38 15 41)" />
+                            <ellipse cx="12.4" cy="31" rx="2.2" ry="4.6" transform="rotate(30 12.4 31)" />
+                            <ellipse cx="12" cy="21" rx="2.1" ry="4.4" transform="rotate(26 12 21)" />
+                            <ellipse cx="11" cy="4.6" rx="2.2" ry="4.2" transform="rotate(20 11 4.6)" />
+                        </g>
+                    </symbol>
+                </svg>
+                <ul class="awards" data-reveal style="--d: 3">
+                    <li class="award">
+                        <svg class="laurel" viewBox="0 0 24 56" aria-hidden="true"><use href="#laurel" /></svg>
+                        <span class="award__text">
+                            <strong>4.8 <span class="award__stars" aria-hidden="true">★★★★★</span></strong>
+                            <small>Google Play rating</small>
+                        </span>
+                        <svg class="laurel laurel--r" viewBox="0 0 24 56" aria-hidden="true"><use href="#laurel" /></svg>
+                    </li>
+                    <li class="award">
+                        <svg class="laurel" viewBox="0 0 24 56" aria-hidden="true"><use href="#laurel" /></svg>
+                        <span class="award__text">
+                            <small>As featured in</small>
+                            <img class="award__logo" src="assets/img/dailyhunt_logo.svg" alt="Dailyhunt" width="138" height="36" />
+                        </span>
+                        <svg class="laurel laurel--r" viewBox="0 0 24 56" aria-hidden="true"><use href="#laurel" /></svg>
+                    </li>
+                    <li class="award">
+                        <svg class="laurel" viewBox="0 0 24 56" aria-hidden="true"><use href="#laurel" /></svg>
+                        <span class="award__text">
+                            <strong>8K+ players</strong>
+                            <small>in 150 countries</small>
+                        </span>
+                        <svg class="laurel laurel--r" viewBox="0 0 24 56" aria-hidden="true"><use href="#laurel" /></svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="hero__device" data-reveal style="--d: 2">
+                <div class="held" data-parallax>
+                    <img class="held__img" src="assets/img/app/hero-hand.webp"
+                        alt="A hand holding a phone showing the Senchou home screen" width="930" height="1260" />
                 </div>
             </div>
-        </div>
-    </aside>
+        </section>
 
-    <!-- YouTube Video Section -->
-    <section class="video-section">
-        <div class="container px-5">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6">
-                    <div class="video-card">
-                        <div class="video-wrapper">
-                            <iframe src="https://www.youtube.com/embed/FaGJV5NGsLU" title="Founders Talk About Senchou" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!-- Stage (dark): pinned phone, one scene per match stage -->
+        <section class="stage" data-dark aria-labelledby="stage-title">
+            <h2 id="stage-title" class="visually-hidden">How Senchou works</h2>
+            <div class="stage__track" data-stage>
+                <div class="stage__sticky">
+                    <div class="stage__glow" data-glow="0" aria-hidden="true"></div>
+                    <div class="stage__glow" data-glow="1" aria-hidden="true"></div>
+                    <div class="stage__glow" data-glow="2" aria-hidden="true"></div>
+                    <div class="stage__glow" data-glow="3" aria-hidden="true"></div>
+
+                    <div class="ghost" aria-hidden="true">
+                        <span style="--x: 6%; --y: 16%;">ISHZERO</span>
+                        <span style="--x: 74%; --y: 12%;" class="ghost__pill">Full-time</span>
+                        <span style="--x: 10%; --y: 70%;" class="ghost__big">10 – 13</span>
+                        <span style="--x: 80%; --y: 34%;">LEGIONS</span>
+                        <span style="--x: 68%; --y: 78%;" class="ghost__big">24 PTS</span>
+                        <span style="--x: 20%; --y: 42%;" class="ghost__pill">QF</span>
+                        <span style="--x: 86%; --y: 58%;">PUBG</span>
+                        <span style="--x: 4%; --y: 88%;">Corporate League</span>
+                        <span style="--x: 30%; --y: 8%;">Team Devils</span>
+                        <span style="--x: 60%; --y: 92%;" class="ghost__pill">Match winner</span>
+                    </div>
+
+                    <div class="stage__captions">
+                        <div class="stage__caption" data-caption="0">
+                            <p class="stage__kicker">01 · Before the match</p>
+                            <h3>Put your team on the map.</h3>
+                            <p>Register in seconds. Pick a unique name, add a logo and bring in 4 to 6 players. Names
+                                are first come, first served.</p>
+                        </div>
+                        <div class="stage__caption" data-caption="1">
+                            <p class="stage__kicker">02 · During the match</p>
+                            <h3>Score it live, round by round.</h3>
+                            <p>Organisers score scrims and tournament matches in real time, from 1v1s to class matches.
+                            </p>
+                        </div>
+                        <div class="stage__caption" data-caption="2">
+                            <p class="stage__kicker">03 · After the match</p>
+                            <h3>Standings that settle every argument.</h3>
+                            <p>Results roll straight into the tournament table, so everyone sees who made the podium.
+                            </p>
+                        </div>
+                        <div class="stage__caption" data-caption="3">
+                            <p class="stage__kicker">04 · Your career</p>
+                            <h3>A profile that proves it.</h3>
+                            <p>Your teams, matches and results live on your profile for good, ready for your next team
+                                to find.</p>
+                        </div>
+                    </div>
+
+                    <div class="phone phone--stage">
+                        <div class="phone__screen">
+                            <img data-screen="0" class="is-active" src="assets/img/app/register-team.webp"
+                                alt="Register a Team screen" width="640" height="1352" />
+                            <img data-screen="1" src="assets/img/app/match-final.webp"
+                                alt="Final match scoreboard: Ishzero 10, LEGIONS 13" loading="lazy" width="640"
+                                height="1352" />
+                            <img data-screen="2" src="assets/img/app/standings.webp"
+                                alt="Corporate League podium and standings" loading="lazy" width="640" height="1352" />
+                            <img data-screen="3" src="assets/img/app/profile.webp" alt="Player profile"
+                                loading="lazy" width="640" height="1352" />
+                        </div>
+                    </div>
+
+                    <div class="stage__cards" aria-hidden="true">
+                        <div class="glass-card" data-card="0">
+                            <span class="glass-card__check">✓</span>
+                            <span><small>Name reserved</small><strong>Ishzero</strong></span>
+                        </div>
+                        <div class="glass-card glass-card--score" data-card="1">
+                            <small>warzone cup · Final</small>
+                            <div><span>Ishzero</span><b>10</b><i>–</i><b class="hi">13</b><span>LEGIONS</span></div>
+                        </div>
+                        <ol class="glass-card glass-card--table" data-card="2">
+                            <li><span class="gold">1</span>Ishzero<b>24 pts</b></li>
+                            <li><span>2</span>Falcons<b>20 pts</b></li>
+                            <li><span>3</span>Team Devils<b>16 pts</b></li>
+                        </ol>
+                        <div class="glass-card" data-card="3">
+                            <span class="glass-card__check glass-card__check--blue">★</span>
+                            <span><small>Role</small><strong>Assaulter</strong></span>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="video-text-content">
-                        <span class="video-subtitle">Watch & Learn</span>
-                        <h2 class="video-title">The Story Behind Senchou</h2>
-                        <p class="video-description">Hear from our founders about the vision behind Senchou and the realities of esports.</p>
-                        <p class="video-description">The founders discuss the app and their vision for the future of gaming.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- App features section-->
-    <section id="features">
-        <div class="container px-5">
-            <div class="row gx-5 align-items-center">
-                <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
-                    <div class="container-fluid px-5">
-                        <div class="row gx-5">
-                            <div class="col-md-6 mb-5">
-                                <!-- Feature item-->
-                                <div class="text-center">
-                                    <img src="assets/img/team_new.png"></img>
-                                    <h3 class="font-alt">Multiple User types</h3>
-                                    <p class="text-muted mb-0">Start as a Player and create your team or start as an org
-                                        to start scoring.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-5">
-                                <!-- Feature item-->
-                                <div class="text-center">
-                                    <img src="assets/img/score_new.png"></img>
-                                    <h3 class="font-alt">Multiple Match types</h3>
-                                    <p class="text-muted mb-0">Start scoring with 1vs1 or Class Match</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 mb-5 mb-md-0">
-                                <!-- Feature item-->
-                                <div class="text-center">
-                                    <img src="assets/img/search_new.png"></img>
-                                    <h3 class="font-alt">E-Sports at your fingertips</h3>
-                                    <p class="text-muted mb-0">One-Stop for all the related news and videos related to
-                                        E-Sports and other games.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <!-- Feature item-->
-                                <div class="text-center">
-                                    <img src="assets/img/account_new.png"></img>
-                                    <h3 class="font-alt">Search Scores</h3>
-                                    <p class="text-muted mb-0">Search scores scored on Senchou and showcase your profile
-                                        to build your career faster.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 order-lg-0">
-                    <!-- Features section device mockup-->
-                    <div class="features-device-mockup">
-
-                        <div class="device-wrapper">
-                            <div class="device" data-device="modern" data-orientation="portrait" data-color="black">
-                                <div class="screen bg-black">
-                                    <img src="assets/img/sc_3.jpg" style="width: 100%; height: 100%; object-fit: cover" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="masthead" style="background-color: #0d152d;">
-        <div class="container px-5">
-            <div class="row gx-5 align-items-center">
-                <div class="col-lg-6">
-                    <!-- Mashead text and app badges-->
-                    <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                        <h1 style="font-size: 50px;" class="display-1 lh-1 mb-3 text-white">8k+ players from 150
-                            countries have already joined Senchou.</h1>
-                        <div class="row">
-                            <div class="col-md-3 col-sm-6">
-                                <div class="counter">
-                                    <span class="counter-value" style="font-family: Mulish;">530+</span>
-                                    <h3 style="font-family: Mulish;">Matches Scored</h3>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 col-sm-6">
-                                <div class="counter ">
-                                    <span class="counter-value" style="font-family: Mulish;">275+</span>
-                                    <h3 style="font-family: Mulish;">Registered Orgs</h3>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6">
-                                <div class="counter ">
-                                    <span class="counter-value" style="font-family: Mulish;">30K+</span>
-                                    <h3 style="font-family: Mulish;">Downloads</h3>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <!-- Masthead device mockup feature-->
-                    <div class="masthead-device-mockup">
-                        <div class="device-wrapper">
-                            <div class="device" data-device="modern" data-orientation="portrait" data-color="black">
-                                <div class="screen bg-black">
-                                    <img src="assets/img/sc_4.jpg" style="width: 100%; height: 100%; object-fit: cover" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="device-wrapper">
-                            <div class="device" data-device="modern" data-orientation="portrait" data-color="black">
-                                <div class="screen bg-black">
-                                    <img src="assets/img/sc_5.jpg" style="width: 100%; height: 100%; object-fit: cover" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="bg-light">
-        <div class="container">
-            <h3 style="font-family: Mulish;">People Love Senchou</h3>
-            <p style="font-family: Mulish;">Read Senchou reviews from players across the world and <br>learn what it is
-                like to be on Senchou</p>
-            <p class="text-muted">⭐ 4.8 out of 5 based on user reviews on Google Play Store</p>
-
-
-            <div class="review_row">
-                <div class="card" style="width: 18rem; 
-                    background-image: url(assets/img/review_bg.png); background-size: cover;">
-                    <div class="overlay"></div>
-                    <div class="card-body" style="z-index: 3;">
-                        <p style="font-family: Mulish; font-size: 14px; color: white;" class="card-title">Mubariz</p>
-                        <p style="font-family: Mulish; color: white; margin-top: 20px;" class="card-text"><em>"This
-                                app
-                                caters to the evolving nature of eSports formats. Whether it's
-                                round-robin, double-elimination, or group stages, it adapts seamlessly, providing a
-                                flexible
-                                solution for diverse tournaments"</em></p>
-                    </div>
-                </div>
-
-                <div class="card"
-                    style="width: 18rem; background-image: url(assets/img/review_bg.png); background-size: cover;">
-                    <div class="overlay"></div>
-                    <div class="card-body" style="z-index: 3;">
-                        <p style="font-family: Mulish; font-size: 14px; color: white;" class="card-title">Nitesh Verma
-                        </p>
-                        <p style="font-family: Mulish; color: white; margin-top: 20px;" class="card-text"><em>"Amazing
-                                app for e sports. Helps me a lot in keeping a track in my performance."</em></p>
-                    </div>
-                </div>
-
-                <div class="card"
-                    style="width: 18rem; background-image: url(assets/img/review_bg.png); background-size: cover;">
-                    <div class="overlay"></div>
-                    <div class="card-body" style="z-index: 3;">
-                        <p style="font-family: Mulish; font-size: 14px; color: white;" class="card-title">Mohammed
-                            Farvan</p>
-                        <p style="font-family: Mulish; color: white; margin-top: 20px;" class="card-text"><em>"This
-                                app
-                                caters to the evolving nature of eSports formats. Whether it's
-                                round-robin, double-elimination, or group stages, it adapts seamlessly, providing a
-                                flexible
-                                solution for diverse tournaments"</em></p>
-                    </div>
-                </div>
-
-
+                <!-- Scroll markers: one per scene -->
+                <div class="stage__marker" id="step-before" data-step="0" data-chapter="before"></div>
+                <div class="stage__marker" id="step-during" data-step="1" data-chapter="during"></div>
+                <div class="stage__marker" id="step-after" data-step="2" data-chapter="after"></div>
+                <div class="stage__marker" data-step="3" data-chapter="after"></div>
             </div>
 
-        </div>
-    </section>
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9733133097462328"
-        crossorigin="anonymous"></script>
-    <!-- Square Ad unit -->
-    <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-9733133097462328"
-        data-ad-slot="9705469789"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-
-    <!-- App badge section-->
-    <section style="background-color: #2E2C2C;" id="download">
-        <div class="container px-5">
-            <h2 class="text-center text-white font-alt mb-4">Download the app now!</h2>
-            <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
-                <a class="me-lg-3 mb-4 mb-lg-0" href="https://play.google.com/store/apps/details?id=com.ned.ned"
-                    target="_blank"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
-                <a target="_blank" href="https://apps.apple.com/ca/app/senchou/id6741138914"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
+            <!-- Press (dark tile) -->
+            <div class="container">
+                <a class="press-tile" data-reveal
+                    href="https://m.dailyhunt.in/news/india/english/manish+bhattacharjee-epaper-dh77312861ca7544bb8e8b3f3d9cf342d0/empowering+gamers+and+organizers+ned+gaming+introduces+senchou+app-newsid-dh77312861ca7544bb8e8b3f3d9cf342d0_1fe70a003ce011eeb7bc5a2227aebefa?sm=Y"
+                    target="_blank" rel="noopener">
+                    <img src="assets/img/dailyhunt_logo.svg" alt="Dailyhunt" width="138" height="36" />
+                    <blockquote>“Senchou is a pioneering player in the gaming industry, committed to delivering
+                        innovative solutions that enrich the gaming experience.”</blockquote>
+                </a>
             </div>
-        </div>
-    </section>
-    <!-- Footer-->
-    <footer class="text-center py-5" style="background-color: #1E1D1D;">
-        <div class="container px-5">
-            <div class="text-white-50 small">
-                <div class="mb-2">&copy; Senchou by NedGaming 2026. All Rights Reserved.</div>
-                <a href="privacy_policy.html">Privacy</a>
-                <span class="mx-1">&middot;</span>
-                <a href="#!">Terms</a>
-                <span class="mx-1">&middot;</span>
-                <a href="faq.html">FAQ</a>
-                <span class="mx-1">&middot;</span>
-                <a href="delete_account.html">Delete Account</a>
-                <span class="mx-1">&middot;</span>
+
+            <!-- Feature bento (dark) -->
+            <div class="container section">
+                <h2 class="section__title" data-reveal>Everything you’ve ever wanted to know about your matches, and
+                    more.</h2>
+                <p class="section__lede" data-reveal style="--d: 1">Senchou keeps every result your team plays, from
+                    a Tuesday-night scrim to a tournament final. Know exactly how you performed and settle the debate
+                    with real stats.</p>
+
+                <div class="bento">
+                    <!-- 1. Live scores: photo + broadcast score bar -->
+                    <article class="card card--wide card--photo" data-reveal>
+                        <img class="card__bg" src="assets/img/app/photo-live.webp" alt="" loading="lazy" width="1400"
+                            height="788" />
+                        <div class="card__text">
+                            <h3>Live scores. Finally.</h3>
+                            <p><strong>No more screenshots of scoreboards in the group chat.</strong> Organisers score
+                                every match in the app as it happens, and the result is saved the moment the match
+                                ends.</p>
+                        </div>
+                        <div class="scorebug" aria-hidden="true">
+                            <div class="scorebug__top">
+                                <span class="scorebug__live"><i></i>Live</span>
+                                <span>warzone cup · Final</span>
+                            </div>
+                            <div class="scorebug__row">
+                                <span class="scorebug__team"><b class="crest crest--a">IZ</b>Ishzero</span>
+                                <span class="scorebug__score">10</span>
+                                <span class="scorebug__sep">:</span>
+                                <span class="scorebug__score scorebug__score--hi" data-tick="11,12,13">13</span>
+                                <span class="scorebug__team scorebug__team--r">LEGIONS<b class="crest crest--b">LG</b></span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 2. Standings: 3D podium -->
+                    <article class="card card--dark card--glow-purple" data-reveal style="--d: 1">
+                        <p><strong>Standings, always up to date.</strong> Every result rolls into the tournament
+                            table automatically, so the podium is never in dispute.</p>
+                        <div class="art art--podium" aria-hidden="true">
+                            <svg viewBox="0 0 320 230">
+                                <defs>
+                                    <linearGradient id="pd-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc53d" /><stop offset="1" stop-color="#b8760a" /></linearGradient>
+                                    <linearGradient id="pd-silver" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9dcf0" /><stop offset="1" stop-color="#7c829e" /></linearGradient>
+                                    <linearGradient id="pd-bronze" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ef9d63" /><stop offset="1" stop-color="#8f4a20" /></linearGradient>
+                                    <linearGradient id="pd-cup" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe08a" /><stop offset="1" stop-color="#d48a00" /></linearGradient>
+                                </defs>
+                                <!-- confetti -->
+                                <g class="confetti">
+                                    <rect x="40" y="30" width="6" height="11" rx="2" fill="#ff6a3d" transform="rotate(25 43 35)" />
+                                    <rect x="88" y="14" width="5" height="10" rx="2" fill="#7d5bff" transform="rotate(-30 90 19)" />
+                                    <rect x="230" y="22" width="6" height="11" rx="2" fill="#22c36b" transform="rotate(40 233 27)" />
+                                    <rect x="268" y="48" width="5" height="10" rx="2" fill="#ffc53d" transform="rotate(-15 270 53)" />
+                                    <rect x="200" y="8" width="5" height="9" rx="2" fill="#3d7bff" transform="rotate(60 202 12)" />
+                                    <circle cx="120" cy="34" r="3" fill="#ffc53d" />
+                                    <circle cx="290" cy="20" r="3" fill="#ff6a3d" />
+                                    <circle cx="24" cy="70" r="3" fill="#3d7bff" />
+                                </g>
+                                <!-- trophy on first place -->
+                                <g transform="translate(160 28)">
+                                    <path fill="url(#pd-cup)" d="M-22 0 H22 V10 C22 30 12 40 0 42 C-12 40 -22 30 -22 10 Z" />
+                                    <path fill="none" stroke="#e7a51c" stroke-width="5" d="M-22 6 C-36 6 -36 26 -18 28 M22 6 C36 6 36 26 18 28" />
+                                    <rect x="-4" y="41" width="8" height="10" fill="#c98500" />
+                                    <rect x="-14" y="50" width="28" height="7" rx="2" fill="#a86d00" />
+                                </g>
+                                <!-- 2nd -->
+                                <polygon points="34,132 118,132 130,122 46,122" fill="#eef0fb" opacity="0.9" />
+                                <rect x="34" y="132" width="84" height="98" fill="url(#pd-silver)" />
+                                <polygon points="118,132 130,122 130,230 118,230" fill="#5d6380" />
+                                <!-- 3rd -->
+                                <polygon points="202,156 286,156 298,146 214,146" fill="#ffc7a0" opacity="0.9" />
+                                <rect x="202" y="156" width="84" height="74" fill="url(#pd-bronze)" />
+                                <polygon points="286,156 298,146 298,230 286,230" fill="#6e3615" />
+                                <!-- 1st -->
+                                <polygon points="118,102 202,102 214,92 130,92" fill="#ffe7a6" />
+                                <rect x="118" y="102" width="84" height="128" fill="url(#pd-gold)" />
+                                <polygon points="202,102 214,92 214,230 202,230" fill="#8a5800" opacity="0.85" />
+                                <!-- numbers -->
+                                <g font-family="Inter, sans-serif" font-weight="800" text-anchor="middle" fill="#fff">
+                                    <text x="76" y="182" font-size="36" opacity="0.9">2</text>
+                                    <text x="160" y="166" font-size="44">1</text>
+                                    <text x="244" y="200" font-size="32" opacity="0.9">3</text>
+                                </g>
+                                <!-- names on the blocks -->
+                                <g font-family="Inter, sans-serif" font-weight="700" font-size="11" text-anchor="middle" fill="#fff" opacity="0.85">
+                                    <text x="76" y="210">Falcons</text>
+                                    <text x="160" y="200">Ishzero</text>
+                                    <text x="244" y="220">Team Devils</text>
+                                </g>
+                            </svg>
+                        </div>
+                    </article>
+
+                    <!-- 3. Profile: holographic player card -->
+                    <article class="card card--dark card--glow-blue" data-reveal style="--d: 2">
+                        <p><strong>Your record, searchable.</strong> Every player has a profile with their role,
+                            teams and match history. Search anyone, anywhere.</p>
+                        <div class="art art--player" aria-hidden="true">
+                            <div class="player-card" data-tilt>
+                                <div class="player-card__sheen"></div>
+                                <div class="player-card__top">
+                                    <img src="assets/img/app/app-icon.png" alt="" width="96" height="94" />
+                                    <span>Player profile</span>
+                                </div>
+                                <div class="player-card__avatar">
+                                    <svg viewBox="0 0 80 80">
+                                        <circle cx="40" cy="40" r="40" fill="#20366f" />
+                                        <circle cx="40" cy="33" r="15" fill="#f2c4a0" />
+                                        <path d="M18 74 C20 56 30 50 40 50 C50 50 60 56 62 74 Z" fill="#ed9b05" />
+                                        <path d="M22 34 C22 18 58 18 58 34" fill="none" stroke="#0f1a3a" stroke-width="5" stroke-linecap="round" />
+                                        <rect x="17" y="30" width="9" height="15" rx="4" fill="#0f1a3a" />
+                                        <rect x="54" y="30" width="9" height="15" rx="4" fill="#0f1a3a" />
+                                        <path d="M58 42 C58 50 52 52 46 52" fill="none" stroke="#0f1a3a" stroke-width="3" stroke-linecap="round" />
+                                    </svg>
+                                    <span class="player-card__tick">✓</span>
+                                </div>
+                                <p class="player-card__name">Ishaan Bajaj</p>
+                                <p class="player-card__role">Assaulter</p>
+                                <dl class="player-card__stats">
+                                    <div><dt>Teams</dt><dd>3</dd></div>
+                                    <div><dt>Main team</dt><dd>Ishzero</dd></div>
+                                </dl>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 4. Teams: crest + roster -->
+                    <article class="card card--dark card--glow-green" data-reveal style="--d: 1">
+                        <p><strong>Teams in seconds.</strong> Register a team, upload a logo and add 4 to 6 players.
+                            Only the team admin can make changes later.</p>
+                        <div class="art art--team" aria-hidden="true">
+                            <svg class="crest-big" viewBox="0 0 120 140">
+                                <defs>
+                                    <linearGradient id="cr-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3be08a" /><stop offset="1" stop-color="#0b7a4a" /></linearGradient>
+                                    <linearGradient id="cr-in" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0e2a24" /><stop offset="1" stop-color="#07140f" /></linearGradient>
+                                </defs>
+                                <path fill="url(#cr-g)" d="M60 4 L112 20 V66 C112 100 90 122 60 136 C30 122 8 100 8 66 V20 Z" />
+                                <path fill="url(#cr-in)" d="M60 16 L100 28 V66 C100 93 84 111 60 123 C36 111 20 93 20 66 V28 Z" />
+                                <path fill="#3be08a" d="M44 44 H54 V92 H44 Z M60 44 H80 L66 82 H80 V92 H58 L72 54 H60 Z" />
+                            </svg>
+                            <div class="roster">
+                                <p class="roster__name">Ishzero <span>✓ Name reserved</span></p>
+                                <ul class="roster__players">
+                                    <li style="--c: #ed9b05">IB</li>
+                                    <li style="--c: #3d7bff">KP</li>
+                                    <li style="--c: #8f5bff">AR</li>
+                                    <li style="--c: #ff5d5d">SV</li>
+                                    <li class="roster__add">+</li>
+                                </ul>
+                                <p class="roster__count">4 of 6 players</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- 5. Formats: tournament bracket -->
+                    <article class="card card--dark card--glow-gold" data-reveal style="--d: 2">
+                        <p><strong>Every format.</strong> Score 1v1s and class matches across scrims, leagues and
+                            full tournaments, all in one place.</p>
+                        <div class="art art--bracket" aria-hidden="true">
+                            <svg viewBox="0 0 320 180">
+                                <!-- connectors -->
+                                <g fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="2" stroke-linejoin="round">
+                                    <path d="M118 27 H134 V63 H118 M134 45 H148 V79 H162" />
+                                    <path d="M118 125 H134 V161 H118 M134 143 H148 V109 H162" />
+                                </g>
+                                <path d="M262 109 H278 V94 H284" fill="none" stroke="#ed9b05" stroke-width="2" stroke-linejoin="round" />
+                                <g font-family="Inter, sans-serif" font-size="12" font-weight="600">
+                                    <!-- semi-final 1 -->
+                                    <rect x="8" y="14" width="110" height="26" rx="8" fill="rgba(255,255,255,0.12)" />
+                                    <text x="20" y="31" fill="#fff">Ishzero</text>
+                                    <rect x="8" y="50" width="110" height="26" rx="8" fill="rgba(255,255,255,0.05)" />
+                                    <text x="20" y="67" fill="#8d89a8">Falcons</text>
+                                    <!-- semi-final 2 -->
+                                    <rect x="8" y="112" width="110" height="26" rx="8" fill="rgba(255,255,255,0.12)" />
+                                    <text x="20" y="129" fill="#fff">LEGIONS</text>
+                                    <rect x="8" y="148" width="110" height="26" rx="8" fill="rgba(255,255,255,0.05)" />
+                                    <text x="20" y="165" fill="#8d89a8">Team Devils</text>
+                                    <!-- final -->
+                                    <text x="166" y="58" fill="#8d89a8" font-size="10" letter-spacing="1">FINAL</text>
+                                    <rect x="162" y="66" width="100" height="26" rx="8" fill="rgba(255,255,255,0.06)" />
+                                    <text x="174" y="83" fill="#8d89a8">Ishzero</text>
+                                    <text x="252" y="83" fill="#8d89a8" text-anchor="end">10</text>
+                                    <rect x="162" y="96" width="100" height="26" rx="8" fill="rgba(237,155,5,0.24)" />
+                                    <text x="174" y="113" fill="#ffc96b">LEGIONS</text>
+                                    <text x="252" y="113" fill="#ffc96b" text-anchor="end">13</text>
+                                </g>
+                                <!-- trophy -->
+                                <g transform="translate(300 94)">
+                                    <circle r="15" fill="#ed9b05" />
+                                    <path fill="#1d1300" d="M-6 -7 H6 V-2 C6 3 3 5 0 5 C-3 5 -6 3 -6 -2 Z M-2 5 H2 V7 H5 V9 H-5 V7 H-2 Z" />
+                                </g>
+                            </svg>
+                            <ul class="chips chips--small">
+                                <li>1v1</li>
+                                <li>Class match</li>
+                                <li>Scrims</li>
+                                <li>Tournaments</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- 6. News: fanned article cards -->
+                    <article class="card card--dark card--wide card--glow-purple card--news" data-reveal>
+                        <div class="card__text">
+                            <h3>Esports news, every day.</h3>
+                            <p><strong>Stay in the loop without leaving the app.</strong> Guides, news and videos
+                                on everything from starting a school team to running your first tournament.</p>
+                            <a class="text-link text-link--light" href="blog.html">Read the blog <span
+                                    aria-hidden="true">→</span></a>
+                        </div>
+                        <div class="fan">
+                            <a class="fan__card" href="high_school_esports_usa.html">
+                                <img src="assets/img/app/news-school.webp" alt="" loading="lazy" width="600" height="338" />
+                                <span>Starting a High School Esports Team</span>
+                            </a>
+                            <a class="fan__card" href="running_us_esports_tournament.html">
+                                <img src="assets/img/app/news-tournament.webp" alt="" loading="lazy" width="600" height="338" />
+                                <span>Running Your First Esports Tournament</span>
+                            </a>
+                            <a class="fan__card" href="college_esports_recruiting.html">
+                                <img src="assets/img/app/news-college.webp" alt="" loading="lazy" width="600" height="338" />
+                                <span>How College Esports Recruiting Works</span>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="center-block" data-reveal>
+                    <div class="icon3d" aria-hidden="true">
+                        <div class="icon3d__tile">
+                            <span class="icon3d__layer" style="--i: 16"></span>
+                            <span class="icon3d__layer" style="--i: 15"></span>
+                            <span class="icon3d__layer" style="--i: 14"></span>
+                            <span class="icon3d__layer" style="--i: 13"></span>
+                            <span class="icon3d__layer" style="--i: 12"></span>
+                            <span class="icon3d__layer" style="--i: 11"></span>
+                            <span class="icon3d__layer" style="--i: 10"></span>
+                            <span class="icon3d__layer" style="--i: 9"></span>
+                            <span class="icon3d__layer" style="--i: 8"></span>
+                            <span class="icon3d__layer" style="--i: 7"></span>
+                            <span class="icon3d__layer" style="--i: 6"></span>
+                            <span class="icon3d__layer" style="--i: 5"></span>
+                            <span class="icon3d__layer" style="--i: 4"></span>
+                            <span class="icon3d__layer" style="--i: 3"></span>
+                            <span class="icon3d__layer" style="--i: 2"></span>
+                            <span class="icon3d__layer" style="--i: 1"></span>
+                            <span class="icon3d__face"><img src="assets/img/logo_small.png" alt="" width="506" height="493" /></span>
+                            <span class="icon3d__shine"></span>
+                        </div>
+                        <span class="icon3d__shadow"></span>
+                    </div>
+                    <h2 class="center-block__title">Ready for your next match in a minute</h2>
+                    <p>Download Senchou, create your player profile or register your org, and start scoring. It’s
+                        faster than arguing about who won the last one.</p>
+                    <a class="pill-btn pill-btn--light" href="#download">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5" /><path d="M11 18.5h2" /></svg>
+                        Give Senchou a try</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Players & organisers (light) -->
+        <section class="section container" aria-labelledby="both-title">
+            <h2 id="both-title" class="section__title" data-reveal>Built for both sides of the match.</h2>
+            <p class="section__lede" data-reveal style="--d: 1">Players use Senchou to track their game and get
+                noticed. Organisers use it to run scrims and tournaments without spreadsheets. Everyone sees the
+                same results.</p>
+
+            <div class="bento">
+                <article class="card card--light card--wide card--split" data-reveal>
+                    <div class="card__text">
+                        <h3>Never lose a stat again.</h3>
+                        <p>Track your performance across scrims and tournaments, find local teams, orgs and players,
+                            and catch up on esports news and videos, all in one app.</p>
+                    </div>
+                    <div class="duo" aria-hidden="true">
+                        <div class="phone duo__back">
+                            <div class="phone__screen"><img src="assets/img/app/home.webp" alt="" loading="lazy"
+                                    width="640" height="1352" /></div>
+                        </div>
+                        <div class="phone duo__front">
+                            <div class="phone__screen"><img src="assets/img/app/profile.webp" alt="" loading="lazy"
+                                    width="640" height="1352" /></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card card--light" data-reveal style="--d: 1">
+                    <p><strong class="lead-green">For players.</strong> Create a team or join one, show off your
+                        profile and build your esports career faster.</p>
+                    <ul class="ticks">
+                        <li>Player profile and match history</li>
+                        <li>Find local teams, orgs and players</li>
+                        <li>Esports news and videos</li>
+                    </ul>
+                </article>
+
+                <article class="card card--light" data-reveal style="--d: 2">
+                    <p><strong class="lead-orange">For organisers.</strong> Register as an org to score matches live
+                        and publish results the moment they’re final.</p>
+                    <ul class="ticks">
+                        <li>Score 1v1 and class matches</li>
+                        <li>Run scrims, leagues and tournaments</li>
+                        <li>Automatic standings</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Numbers (light section, split-flap board) -->
+        <section class="section container" aria-labelledby="numbers-title">
+            <h2 id="numbers-title" class="section__title" data-reveal>A scoreboard for the whole scene.</h2>
+            <p class="section__lede" data-reveal style="--d: 1">Players from 150 countries already keep score on
+                Senchou. Here’s where things stand today.</p>
+
+            <div class="board" data-reveal>
+                <div class="board__head">
+                    <span class="board__brand"><img src="assets/img/app/app-icon.png" alt="" width="96"
+                            height="94" />Senchou</span>
+                    <span class="board__live">All-time totals</span>
+                </div>
+                <dl class="board__grid">
+                    <div class="board__row">
+                        <dt>Downloads</dt>
+                        <dd class="flap" data-flap="30K+" aria-label="30K+">30K+</dd>
+                    </div>
+                    <div class="board__row">
+                        <dt>Players</dt>
+                        <dd class="flap" data-flap="8K+" aria-label="8K+">8K+</dd>
+                    </div>
+                    <div class="board__row">
+                        <dt>Matches scored</dt>
+                        <dd class="flap" data-flap="530+" aria-label="530+">530+</dd>
+                    </div>
+                    <div class="board__row">
+                        <dt>Registered orgs</dt>
+                        <dd class="flap" data-flap="275+" aria-label="275+">275+</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- Story (light) -->
+        <section class="section container story" aria-labelledby="story-title">
+            <div class="story__copy">
+                <h2 id="story-title" class="section__title" data-reveal>Built by gamers who were tired of arguing
+                    without stats.</h2>
+                <p class="section__lede" data-reveal style="--d: 1">We’re local amateur gamers. Our scrims and
+                    tournaments always ended in the same heated debate about who really played better, and nobody
+                    could remember every stat. So we built Senchou to keep the record.</p>
+                <a class="text-link" href="about.html" data-reveal style="--d: 2">Meet the team <span
+                        aria-hidden="true">→</span></a>
+            </div>
+            <div data-reveal style="--d: 1">
+                <button class="video-facade" type="button" data-video="FaGJV5NGsLU"
+                    aria-label="Play video: Founders talk about Senchou">
+                    <img src="https://i.ytimg.com/vi/FaGJV5NGsLU/hqdefault.jpg" alt="" loading="lazy" width="480"
+                        height="360" />
+                    <span class="video-facade__play" aria-hidden="true"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Reviews (light) -->
+        <section class="section reviews" aria-labelledby="reviews-title">
+            <div class="container">
+                <h2 id="reviews-title" class="section__title section__title--center" data-reveal>From local scrims
+                    to big tournaments, players love Senchou.</h2>
+                <div class="wall" data-wall>
+                    <figure class="review" data-reveal style="--d: 0">
+                        <figcaption>
+                            <span class="review__avatar" style="--bg: #ffe7bd; --fg: #8a5500" aria-hidden="true">M</span>
+                            <span><strong>Mubariz</strong><small>Google Play</small></span>
+                        </figcaption>
+                        <blockquote>This app caters to the evolving nature of esports formats. Whether it’s round-robin, double-elimination or group stages, it adapts seamlessly, providing a flexible solution for diverse tournaments.</blockquote>
+                    </figure>
+                    <figure class="review" data-reveal style="--d: 1">
+                        <figcaption>
+                            <span class="review__avatar" style="--bg: #e3e9ff; --fg: #2846b0" aria-hidden="true">A</span>
+                            <span><strong>ADARSH M</strong><small>Google Play · Apr 2024</small></span>
+                        </figcaption>
+                        <blockquote>I’m impressed by the variety of features offered in this eSports app. From match statistics to player profiles, it provides everything I need to stay informed and entertained.</blockquote>
+                    </figure>
+                    <figure class="review" data-reveal style="--d: 2">
+                        <figcaption>
+                            <span class="review__avatar" style="--bg: #efe3ff; --fg: #5b2bb0" aria-hidden="true">N</span>
+                            <span><strong>Nitesh Verma</strong><small>Google Play</small></span>
+                        </figcaption>
+                        <blockquote>Amazing app for esports. Helps me a lot in keeping track of my performance.</blockquote>
+                    </figure>
+                    <figure class="review" data-reveal style="--d: 0">
+                        <figcaption>
+                            <span class="review__avatar" style="--bg: #d9f5e5; --fg: #0b6b38" aria-hidden="true">V</span>
+                            <span><strong>Vandana Anoop</strong><small>Google Play · Nov 2023</small></span>
+                        </figcaption>
+                        <blockquote>This scoring app promotes sportsmanship in eSports.</blockquote>
+                    </figure>
+                    <figure class="review" data-reveal style="--d: 1">
+                        <figcaption>
+                            <span class="review__avatar" style="--bg: #ffe0e3; --fg: #a3202f" aria-hidden="true">A</span>
+                            <span><strong>Aziz Hazari</strong><small>Google Play · Jan 2024</small></span>
+                        </figcaption>
+                        <blockquote>Great app for eSports enthusiasts. I recently started using the eSports app and I have been thoroughly impressed with its features. … The interface is user-friendly and easy to navigate, making it simple to find information about my favorite games and teams.</blockquote>
+                    </figure>
+                    <figure class="review" data-reveal style="--d: 2">
+                        <figcaption>
+                            <span class="review__avatar" style="--bg: #ececf0; --fg: #3a3a40" aria-hidden="true">D</span>
+                            <span><strong>Dailyhunt</strong><small>Press</small></span>
+                        </figcaption>
+                        <blockquote>Senchou is a pioneering player in the gaming industry, committed to delivering innovative solutions that enrich the gaming experience.</blockquote>
+                    </figure>
+                    <figure class="review" data-reveal style="--d: 0">
+                        <figcaption>
+                            <span class="review__avatar" style="--bg: #fff1c7; --fg: #7a5a00" aria-hidden="true">S</span>
+                            <span><strong>Santhi V G</strong><small>Google Play · Apr 2024</small></span>
+                        </figcaption>
+                        <blockquote>Appreciate how this eSports app caters to both casual gamers and hardcore enthusiasts. Whether I’m looking for beginner tips or in-depth analysis, I can find it all in one place.</blockquote>
+                    </figure>
+                    <figure class="review" data-reveal style="--d: 1">
+                        <figcaption>
+                            <span class="review__avatar" style="--bg: #d6f3f7; --fg: #0b5e6b" aria-hidden="true">V</span>
+                            <span><strong>Vibha Balakrishnan</strong><small>Google Play · Nov 2023</small></span>
+                        </figcaption>
+                        <blockquote>Kudos to the developers for creating an app that caters to the global eSports community.</blockquote>
+                    </figure>
+                </div>
+                <div class="wall__more" data-reveal>
+                    <a class="pill-btn pill-btn--dark"
+                        href="https://play.google.com/store/apps/details?id=com.ned.ned&showAllReviews=true"
+                        target="_blank" rel="noopener">
+                        <span class="wall__rating">★ 4.8</span> Read more reviews on Google Play
+                        <span class="wall__arrow" aria-hidden="true">→</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ad unit -->
+        <aside class="ad-slot container" aria-label="Advertisement">
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9733133097462328"
+                data-ad-slot="9705469789" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </aside>
+
+        <!-- Final CTA (light) -->
+        <section class="finale" id="download" aria-labelledby="finale-title">
+            <div class="container finale__copy">
+                <h2 id="finale-title" class="finale__title" data-reveal>GG. See you in the next match.</h2>
+                <p data-reveal style="--d: 1">We’ll keep the score. You just play. Available on Android and iOS.
+                    Download for free.</p>
+                <div class="badges badges--center" data-reveal style="--d: 2">
+                    <a href="https://play.google.com/store/apps/details?id=com.ned.ned" target="_blank"
+                        rel="noopener"><img src="assets/img/google-play-badge.svg" alt="Get it on Google Play"
+                            width="150" height="45" /></a>
+                    <a href="https://apps.apple.com/ca/app/senchou/id6741138914" target="_blank"
+                        rel="noopener"><img src="assets/img/app-store-badge.svg" alt="Download on the App Store"
+                            width="135" height="45" /></a>
+                </div>
+            </div>
+            <div class="lineup" aria-hidden="true" data-reveal style="--d: 2">
+                <div class="phone lineup__side lineup__side--l">
+                    <div class="phone__screen"><img src="assets/img/app/register-team.webp" alt="" loading="lazy"
+                            width="640" height="1352" /></div>
+                </div>
+                <div class="phone lineup__mid">
+                    <div class="phone__screen"><img src="assets/img/app/standings.webp" alt="" loading="lazy"
+                            width="640" height="1352" /></div>
+                </div>
+                <div class="phone lineup__side lineup__side--r">
+                    <div class="phone__screen"><img src="assets/img/app/profile.webp" alt="" loading="lazy"
+                            width="640" height="1352" /></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__grid">
+            <div class="footer__brand">
+                <a href="index.html" aria-label="Senchou home"><img src="assets/img/web_logo.png" alt="Senchou" width="457" height="109" /></a>
+            </div>
+            <nav class="footer__col" aria-label="Product">
+                <h3>Product</h3>
+                <a href="#download">Download</a>
+                <a href="games_included.html">Games included</a>
+                <a href="help.html">Help Center</a>
+            </nav>
+            <nav class="footer__col" aria-label="Company">
+                <h3>Company</h3>
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <nav class="footer__col" aria-label="Shop">
+                <h3>Shop</h3>
                 <a href="https://nedgamingai.lemonsqueezy.com" target="_blank" rel="noopener noreferrer">Store</a>
-                <span class="mx-1">&middot;</span>
                 <a href="https://nedgamingai.lemonsqueezy.com/affiliates" target="_blank"
                     rel="noopener noreferrer">Affiliates</a>
-            </div>
+            </nav>
+            <nav class="footer__col" aria-label="Legal">
+                <h3>Legal</h3>
+                <a href="privacy_policy.html">Privacy</a>
+                <a href="delete_account.html">Delete account</a>
+            </nav>
+        </div>
+        <div class="container footer__base">
+            <p>&copy; 2026 Senchou by NED Gaming. All rights reserved.</p>
         </div>
     </footer>
-    <!-- Feedback Modal-->
-    <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header bg-gradient-primary-to-secondary p-4">
-                    <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Share your feedback about the
-                        Senchou app!</h5>
-                    <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
-                </div>
-                <div class="modal-body border-0 p-4">
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                        <!-- Name input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="name" type="text" placeholder="Enter your name..."
-                                data-sb-validations="required" />
-                            <label for="name">Full name</label>
-                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                        </div>
-                        <!-- Email address input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="email" type="email" placeholder="name@example.com"
-                                data-sb-validations="required,email" />
-                            <label for="email">Email address</label>
-                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                        </div>
-                        <!-- Phone number input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
-                                data-sb-validations="required" />
-                            <label for="phone">Phone number</label>
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
-                            </div>
-                        </div>
-                        <!-- Message input-->
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" type="text"
-                                placeholder="Enter your message here..." style="height: 10rem"
-                                data-sb-validations="required"></textarea>
-                            <label for="message">Message</label>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
-                            </div>
-                        </div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3">
-                                <div class="fw-bolder">Form submission successful!</div>
-                            </div>
-                        </div>
 
-
-                        <!-- Submit Button-->
-                        <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg disabled"
-                                id="submitButton" type="submit">Submit</button></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script src="js/home.js" defer></script>
 </body>
 
 </html>

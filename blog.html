@@ -2,306 +2,254 @@
 <html lang="en">
 
 <head>
-
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVGZ369790"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-QVGZ369790');
     </script>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9733133097462328"
-    crossorigin="anonymous"></script>
+
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Senchou - ESports Database</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/logo_2.png" />
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Senchou Blog: Esports Guides for Players and Organisers</title>
+    <meta name="description"
+        content="Guides and ideas for amateur esports: running tournaments, starting school teams, college recruiting, esports careers and more." />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="canonical" href="https://nedgaming.com/blog.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="The Senchou Blog" />
+    <meta property="og:description"
+        content="Guides and ideas for players, teams and organisers in amateur esports." />
+    <meta property="og:image" content="https://nedgaming.com/assets/img/blog_tournament_venue.jpg" />
+    <link rel="icon" type="image/png" href="assets/img/logo_small.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
-        rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/home.css" rel="stylesheet" />
+    <link href="css/help.css" rel="stylesheet" />
+    <link href="css/blog.css" rel="stylesheet" />
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-        <div class="container px-5">
-            <a href="index.html"><img src="assets/img/web_logo.png" style="height: 40px;"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="bi-list"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="contact.html">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3"
-                            href="https://nedgamingai.lemonsqueezy.com" target="_blank"
-                            rel="noopener noreferrer">Store</a></li>
-                    <li class="nav-item"><a class="nav-link me-lg-3"
-                            href="https://nedgamingai.lemonsqueezy.com/affiliates" target="_blank"
-                            rel="noopener noreferrer">Affiliates</a></li>
-                </ul>
-                <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal"
-                    data-bs-target="#feedbackModal" style="background-color: #ED9B05;">
-                    <span class="d-flex align-items-center">
-                        <i class="bi-chat-text-fill me-2"></i>
-                        <span class="small">Send Feedback</span>
-                    </span>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Header: flat at the top, pill on scroll -->
+    <header class="nav" data-nav>
+        <div class="nav__pill">
+            <a href="index.html" class="nav__logo" aria-label="Senchou home">
+                <img class="nav__logo-on-light" src="assets/img/web_logo.png" alt="Senchou" width="457" height="109" />
+                <img class="nav__logo-on-dark" src="assets/img/app/logo-light.png" alt="" width="457" height="109" />
+            </a>
+            <nav id="nav-menu" class="nav__menu" aria-label="Main">
+                <a href="about.html">About</a>
+                <a href="blog.html" aria-current="page">Blog</a>
+                <a href="help.html">Help Center</a>
+                <a href="contact.html">Contact</a>
+                <a href="https://nedgamingai.lemonsqueezy.com" target="_blank" rel="noopener noreferrer">Store</a>
+            </nav>
+            <div class="nav__end">
+                <a href="index.html#download" class="nav__cta">Get the app
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.5" /><path d="M11 18.5h2" /></svg>
+                </a>
+                <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" data-nav-toggle>
+                    <span class="nav__toggle-bars" aria-hidden="true"></span>
+                    <span class="visually-hidden">Menu</span>
                 </button>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <main class="blog-page">
-        <section class="blog-hero">
-            <div class="container">
-                <div class="blog-hero-content text-center">
-                    <p class="blog-subtitle">Senchou Blog</p>
-                    <h1 class="blog-title">Latest News & Updates</h1>
-                    <p class="blog-description">Stay updated with the latest gaming news, tips, and Senchou features</p>
-                </div>
+    <main id="main">
+        <!-- Hero -->
+        <section class="blog-hero container">
+            <p class="help-kicker" data-reveal><span aria-hidden="true">···</span>Blog<span
+                    aria-hidden="true">···</span></p>
+            <h1 class="blog-hero__title" data-reveal style="--d: 1">Stories from the scene</h1>
+            <p class="blog-hero__lede" data-reveal style="--d: 2">Guides and ideas for players, teams and organisers,
+                from your first scrim to your first season.</p>
+
+            <div class="filters" role="group" aria-label="Filter posts by topic" data-reveal style="--d: 3" data-filters>
+                <button type="button" class="is-active" aria-pressed="true" data-filter="all">All</button>
+                <button type="button" aria-pressed="false" data-filter="organizers">Organizers</button>
+                <button type="button" aria-pressed="false" data-filter="collegiate">Collegiate</button>
+                <button type="button" aria-pressed="false" data-filter="scholastic">Scholastic</button>
+                <button type="button" aria-pressed="false" data-filter="careers">Careers</button>
+                <button type="button" aria-pressed="false" data-filter="games">Games</button>
+                <button type="button" aria-pressed="false" data-filter="health">Health</button>
             </div>
         </section>
 
-        <section class="blog-posts">
-            <div class="container">
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-6 col-lg-5">
-                        <article class="blog-card">
-                            <div class="blog-card-image">
-                                <img src="assets/img/game_inlcuded.jpg" alt="Games Included on Senchou">
-                                <span class="blog-badge">New</span>
-                            </div>
-                            <div class="blog-card-content">
-                                <div class="blog-meta">
-                                    <span class="blog-category"><i class="bi bi-controller me-1"></i> Games</span>
-                                </div>
-                                <h2 class="blog-card-title">Games Included on Senchou</h2>
-                                <p class="blog-card-excerpt">List of all the games that can be scored on Senchou, with more games support being added everyday.</p>
-                                <a href="games_included.html" class="blog-read-more">
-                                    Read More <i class="bi bi-arrow-right ms-2"></i>
-                                </a>
-                            </div>
-                        </article>
-                    </div>
+        <section class="container posts" aria-label="Posts" data-posts>
+            <!-- Featured post -->
+            <a class="post post--featured" href="running_us_esports_tournament.html" data-cat="organizers"
+                data-reveal>
+                <div class="post__img"><img src="assets/img/app/cover-tournament.webp"
+                        alt="Rows of gaming PCs set up in a tournament venue" width="1200" height="675" /></div>
+                <div class="post__body">
+                    <p class="post__cat" style="--cat: #d27f00">Organizers · Featured</p>
+                    <h2>Running Your First Esports Tournament in the US</h2>
+                    <p class="post__excerpt">Bracket formats, online versus LAN, writing a ruleset, and the basics of
+                        handling prize money.</p>
+                    <p class="post__meta">Oct 25, 2026 · 8 min read</p>
+                    <span class="post__read">Read the guide <span aria-hidden="true">→</span></span>
+                </div>
+            </a>
 
-                    <div class="col-md-6 col-lg-5">
-                        <article class="blog-card">
-                            <div class="blog-card-image">
-                                <img src="assets/img/gaming_health.png" alt="Improve E-Athletes Health">
-                            </div>
-                            <div class="blog-card-content">
-                                <div class="blog-meta">
-                                    <span class="blog-category"><i class="bi bi-heart-pulse me-1"></i> Health</span>
-                                </div>
-                                <h2 class="blog-card-title">Improve E-Athletes Career & Health</h2>
-                                <p class="blog-card-excerpt">How to improve and prolong E-Athletes career and health for long-term success in gaming.</p>
-                                <a href="improve_health.html" class="blog-read-more">
-                                    Read More <i class="bi bi-arrow-right ms-2"></i>
-                                </a>
-                            </div>
-                        </article>
-                    </div>
+            <a class="post" href="esports_careers_usa.html" data-cat="careers" data-reveal>
+                <div class="post__img"><img src="assets/img/app/cover-careers.webp"
+                        alt="Two players at gaming PCs under red and blue lights" loading="lazy" width="1200"
+                        height="675" /></div>
+                <div class="post__body">
+                    <p class="post__cat" style="--cat: #6a43e0">Careers</p>
+                    <h2>Esports Careers in the US Beyond Going Pro</h2>
+                    <p class="post__excerpt">Coaching, analysis, broadcast, operations and content roles: what they
+                        involve and how people get them.</p>
+                    <p class="post__meta">Oct 25, 2026 · 7 min read</p>
+                </div>
+            </a>
 
-                    <div class="col-md-6 col-lg-5">
-                        <article class="blog-card">
-                            <div class="blog-card-image">
-                                <img src="assets/img/blog_college_esports.jpg" alt="College-age esports team at a competition venue">
-                                <span class="blog-badge">New</span>
-                            </div>
-                            <div class="blog-card-content">
-                                <div class="blog-meta">
-                                    <span class="blog-category"><i class="bi bi-mortarboard me-1"></i> Collegiate</span>
-                                </div>
-                                <h2 class="blog-card-title">How College Esports Recruiting Works in the US</h2>
-                                <p class="blog-card-excerpt">Who governs varsity collegiate esports, how scholarships really work, and how to build a record coaches can verify.</p>
-                                <a href="college_esports_recruiting.html" class="blog-read-more">
-                                    Read More <i class="bi bi-arrow-right ms-2"></i>
-                                </a>
-                            </div>
-                        </article>
-                    </div>
+            <a class="post" href="college_esports_recruiting.html" data-cat="collegiate" data-reveal style="--d: 1">
+                <div class="post__img"><img src="assets/img/app/cover-college.webp"
+                        alt="A college esports team posing in front of a stage" loading="lazy" width="1200"
+                        height="675" /></div>
+                <div class="post__body">
+                    <p class="post__cat" style="--cat: #2b62e0">Collegiate</p>
+                    <h2>How College Esports Recruiting Works in the US</h2>
+                    <p class="post__excerpt">Who governs varsity collegiate esports, how scholarships really work,
+                        and how to build a record coaches can verify.</p>
+                    <p class="post__meta">Oct 25, 2026 · 7 min read</p>
+                </div>
+            </a>
 
-                    <div class="col-md-6 col-lg-5">
-                        <article class="blog-card">
-                            <div class="blog-card-image">
-                                <img src="assets/img/blog_high_school_esports.jpg" alt="Two young players competing side by side on a school esports team">
-                                <span class="blog-badge">New</span>
-                            </div>
-                            <div class="blog-card-content">
-                                <div class="blog-meta">
-                                    <span class="blog-category"><i class="bi bi-backpack me-1"></i> Scholastic</span>
-                                </div>
-                                <h2 class="blog-card-title">Starting a High School Esports Team in the US</h2>
-                                <p class="blog-card-excerpt">State association leagues, PlayVS, HSEL and NASEF, realistic budgets, and running a season that lasts.</p>
-                                <a href="high_school_esports_usa.html" class="blog-read-more">
-                                    Read More <i class="bi bi-arrow-right ms-2"></i>
-                                </a>
-                            </div>
-                        </article>
-                    </div>
+            <a class="post" href="high_school_esports_usa.html" data-cat="scholastic" data-reveal style="--d: 2">
+                <div class="post__img"><img src="assets/img/app/cover-school.webp"
+                        alt="Students playing on keyboards with green lighting" loading="lazy" width="1200"
+                        height="675" /></div>
+                <div class="post__body">
+                    <p class="post__cat" style="--cat: #12a150">Scholastic</p>
+                    <h2>Starting a High School Esports Team in the US</h2>
+                    <p class="post__excerpt">State association leagues, PlayVS, HSEL and NASEF, realistic budgets, and
+                        running a season that lasts.</p>
+                    <p class="post__meta">Oct 25, 2026 · 6 min read</p>
+                </div>
+            </a>
 
-                    <div class="col-md-6 col-lg-5">
-                        <article class="blog-card">
-                            <div class="blog-card-image">
-                                <img src="assets/img/blog_tournament_venue.jpg" alt="Rows of competition stations at an esports tournament venue">
-                                <span class="blog-badge">New</span>
-                            </div>
-                            <div class="blog-card-content">
-                                <div class="blog-meta">
-                                    <span class="blog-category"><i class="bi bi-trophy me-1"></i> Organizers</span>
-                                </div>
-                                <h2 class="blog-card-title">Running Your First Esports Tournament in the US</h2>
-                                <p class="blog-card-excerpt">Bracket formats, online versus LAN, writing a ruleset, and the basics of handling prize money.</p>
-                                <a href="running_us_esports_tournament.html" class="blog-read-more">
-                                    Read More <i class="bi bi-arrow-right ms-2"></i>
-                                </a>
-                            </div>
-                        </article>
-                    </div>
+            <a class="post" href="games_included.html" data-cat="games" data-reveal>
+                <div class="post__img"><img src="assets/img/app/cover-games.webp"
+                        alt="Pixel-art city skyline with the words Games Included" loading="lazy" width="800"
+                        height="450" /></div>
+                <div class="post__body">
+                    <p class="post__cat" style="--cat: #d93848">Games</p>
+                    <h2>Games Included on Senchou</h2>
+                    <p class="post__excerpt">The games you can score on Senchou, with support for more being added all
+                        the time.</p>
+                    <p class="post__meta">Sep 12, 2023 · 5 min read</p>
+                </div>
+            </a>
 
-                    <div class="col-md-6 col-lg-5">
-                        <article class="blog-card">
-                            <div class="blog-card-image">
-                                <img src="assets/img/blog_esports_careers.jpg" alt="Esports player speaking into a headset microphone">
-                                <span class="blog-badge">New</span>
-                            </div>
-                            <div class="blog-card-content">
-                                <div class="blog-meta">
-                                    <span class="blog-category"><i class="bi bi-briefcase me-1"></i> Careers</span>
-                                </div>
-                                <h2 class="blog-card-title">Esports Careers in the US Beyond Going Pro</h2>
-                                <p class="blog-card-excerpt">Coaching, analysis, broadcast, operations and content roles &mdash; what they involve and how people get them.</p>
-                                <a href="esports_careers_usa.html" class="blog-read-more">
-                                    Read More <i class="bi bi-arrow-right ms-2"></i>
-                                </a>
-                            </div>
-                        </article>
-                    </div>
+            <a class="post" href="improve_health.html" data-cat="health" data-reveal style="--d: 1">
+                <div class="post__img"><img src="assets/img/app/cover-health.webp"
+                        alt="A young player in a hoodie at a gaming keyboard" loading="lazy" width="800"
+                        height="450" /></div>
+                <div class="post__body">
+                    <p class="post__cat" style="--cat: #0b8a9c">Health</p>
+                    <h2>Improve E-Athletes’ Career and Health</h2>
+                    <p class="post__excerpt">How to improve and prolong an esports career and stay healthy for
+                        long-term success in gaming.</p>
+                    <p class="post__meta">Aug 21, 2023 · 4 min read</p>
+                </div>
+            </a>
+
+            <p class="help-empty" hidden data-posts-empty>No posts in this topic yet.</p>
+        </section>
+
+        <!-- Suggest a topic -->
+        <section class="container">
+            <aside class="help-more blog-suggest" data-reveal>
+                <h2>What should we write about next?</h2>
+                <p>Got a question about running events, building a team or getting noticed? Tell us and it might be
+                    our next post.</p>
+                <a class="pill-btn pill-btn--dark" href="mailto:ned.esports@gmail.com?subject=Blog%20topic%20idea">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3" /><path d="m4 7 8 6 8-6" /></svg>
+                    Suggest a topic</a>
+            </aside>
+        </section>
+
+        <!-- Closing CTA -->
+        <section class="finale" id="download" aria-labelledby="finale-title">
+            <div class="container finale__copy">
+                <h2 id="finale-title" class="finale__title finale__title--sm" data-reveal>Read it here. Score it in
+                    the app.</h2>
+                <p data-reveal style="--d: 1">Put the guides into practice. Register your team, score your matches and
+                    keep every result.</p>
+                <div class="badges badges--center" data-reveal style="--d: 2">
+                    <a href="https://play.google.com/store/apps/details?id=com.ned.ned" target="_blank"
+                        rel="noopener"><img src="assets/img/google-play-badge.svg" alt="Get it on Google Play"
+                            width="150" height="45" /></a>
+                    <a href="https://apps.apple.com/ca/app/senchou/id6741138914" target="_blank"
+                        rel="noopener"><img src="assets/img/app-store-badge.svg" alt="Download on the App Store"
+                            width="135" height="45" /></a>
+                </div>
+            </div>
+            <div class="lineup" aria-hidden="true" data-reveal style="--d: 2">
+                <div class="phone lineup__side lineup__side--l">
+                    <div class="phone__screen"><img src="assets/img/app/home.webp" alt="" loading="lazy" width="640"
+                            height="1352" /></div>
+                </div>
+                <div class="phone lineup__mid">
+                    <div class="phone__screen"><img src="assets/img/app/match-final.webp" alt="" loading="lazy"
+                            width="640" height="1352" /></div>
+                </div>
+                <div class="phone lineup__side lineup__side--r">
+                    <div class="phone__screen"><img src="assets/img/app/standings.webp" alt="" loading="lazy"
+                            width="640" height="1352" /></div>
                 </div>
             </div>
         </section>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
-    <!-- Footer-->
-    <footer class="text-center py-5" style="background-color: #1E1D1D;">
-        <div class="container px-5">
-            <div class="text-white-50 small">
-                <div class="mb-2">&copy; Senchou by NedGaming 2026. All Rights Reserved.</div>
-                <a href="privacy_policy.html">Privacy</a>
-                <span class="mx-1">&middot;</span>
-                <a href="#!">Terms</a>
-                <span class="mx-1">&middot;</span>
-                <a href="faq.html">FAQ</a>
-                <span class="mx-1">&middot;</span>
-                <a href="delete_account.html">Delete Account</a>
-                <span class="mx-1">&middot;</span>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__grid">
+            <div class="footer__brand">
+                <a href="index.html" aria-label="Senchou home"><img src="assets/img/web_logo.png" alt="Senchou" width="457" height="109" /></a>
+            </div>
+            <nav class="footer__col" aria-label="Product">
+                <h3>Product</h3>
+                <a href="index.html#download">Download</a>
+                <a href="games_included.html">Games included</a>
+                <a href="help.html">Help Center</a>
+            </nav>
+            <nav class="footer__col" aria-label="Company">
+                <h3>Company</h3>
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <nav class="footer__col" aria-label="Shop">
+                <h3>Shop</h3>
                 <a href="https://nedgamingai.lemonsqueezy.com" target="_blank" rel="noopener noreferrer">Store</a>
-                <span class="mx-1">&middot;</span>
                 <a href="https://nedgamingai.lemonsqueezy.com/affiliates" target="_blank"
                     rel="noopener noreferrer">Affiliates</a>
-            </div>
+            </nav>
+            <nav class="footer__col" aria-label="Legal">
+                <h3>Legal</h3>
+                <a href="privacy_policy.html">Privacy</a>
+                <a href="delete_account.html">Delete account</a>
+            </nav>
+        </div>
+        <div class="container footer__base">
+            <p>&copy; 2026 Senchou by NED Gaming. All rights reserved.</p>
         </div>
     </footer>
-    <!-- Feedback Modal-->
-    <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header bg-gradient-primary-to-secondary p-4">
-                    <h5 class="modal-title font-alt text-white" id="feedbackModalLabel">Share your feedback about the
-                        Senchou app!</h5>
-                    <button class="btn-close btn-close-white" type="button" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
-                </div>
-                <div class="modal-body border-0 p-4">
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                        <!-- Name input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="name" type="text" placeholder="Enter your name..."
-                                data-sb-validations="required" />
-                            <label for="name">Full name</label>
-                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                        </div>
-                        <!-- Email address input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="email" type="email" placeholder="name@example.com"
-                                data-sb-validations="required,email" />
-                            <label for="email">Email address</label>
-                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                        </div>
-                        <!-- Phone number input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
-                                data-sb-validations="required" />
-                            <label for="phone">Phone number</label>
-                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.
-                            </div>
-                        </div>
-                        <!-- Message input-->
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" type="text"
-                                placeholder="Enter your message here..." style="height: 10rem"
-                                data-sb-validations="required"></textarea>
-                            <label for="message">Message</label>
-                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.
-                            </div>
-                        </div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3">
-                                <div class="fw-bolder">Form submission successful!</div>
-                            </div>
-                        </div>
 
-
-                        <!-- Submit Button-->
-                        <div class="d-grid"><button class="btn btn-primary rounded-pill btn-lg disabled"
-                                id="submitButton" type="submit">Submit</button></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <script src="js/home.js" defer></script>
+    <script src="js/blog.js" defer></script>
 </body>
 
 </html>

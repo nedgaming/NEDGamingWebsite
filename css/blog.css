@@ -1,0 +1,225 @@
+/* ==========================================================================
+   Blog index (loads after home.css and help.css)
+   ========================================================================== */
+
+.blog-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: clamp(120px, 15vw, 160px);
+}
+
+.blog-hero__title {
+  margin-top: clamp(28px, 4vw, 44px);
+  font-size: clamp(2.4rem, 5.6vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+
+.blog-hero__lede {
+  max-width: 540px;
+  margin-top: 12px;
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  color: var(--grey);
+}
+
+/* Topic filter pills */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: clamp(28px, 4vw, 40px);
+}
+
+.filters button {
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--paper-2);
+  color: var(--ink-2);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s var(--ease), color 0.25s var(--ease);
+}
+
+.filters button:hover {
+  background: var(--paper-3);
+}
+
+.filters button.is-active {
+  background: var(--ink);
+  color: #fff;
+}
+
+/* Posts grid */
+.posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding-block: clamp(48px, 6vw, 72px) clamp(56px, 8vw, 96px);
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  overflow: hidden;
+  background: var(--paper-2);
+  color: var(--ink);
+  text-decoration: none;
+  transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease);
+}
+
+.post:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 50px -24px rgba(0, 0, 0, 0.28);
+}
+
+.post[hidden] {
+  display: none;
+}
+
+.post__img {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.post__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s var(--ease);
+}
+
+.post:hover .post__img img {
+  transform: scale(1.04);
+}
+
+.post__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 22px 22px;
+}
+
+.post__cat {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--cat, var(--accent));
+}
+
+.post h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.post__excerpt {
+  color: var(--grey);
+  font-size: 0.95rem;
+}
+
+.post__meta {
+  margin-top: auto;
+  padding-top: 6px;
+  font-size: 0.82rem;
+  color: var(--grey-2);
+}
+
+/* Featured post: full width, image beside the text */
+.post--featured {
+  grid-column: 1 / -1;
+  flex-direction: row;
+}
+
+.post--featured .post__img {
+  flex: 0 0 58%;
+  aspect-ratio: auto;
+  min-height: 360px;
+}
+
+.post--featured .post__body {
+  justify-content: center;
+  gap: 12px;
+  padding: clamp(24px, 4vw, 44px);
+}
+
+.post--featured h2 {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+}
+
+.post--featured .post__excerpt {
+  font-size: 1.02rem;
+}
+
+.post--featured .post__meta {
+  margin-top: 4px;
+}
+
+.post__read {
+  align-self: flex-start;
+  margin-top: 10px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.posts .help-empty {
+  grid-column: 1 / -1;
+  margin-top: 0;
+}
+
+/* Suggest-a-topic card */
+.blog-suggest {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.blog-suggest .pill-btn {
+  margin-top: 18px;
+}
+
+@media (max-width: 960px) {
+  .posts {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .posts {
+    grid-template-columns: 1fr;
+  }
+
+  .post--featured {
+    flex-direction: column;
+  }
+
+  .post--featured .post__img {
+    flex-basis: auto;
+    min-height: 0;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+/* help.css styles links inside .help-more; keep the button's own colours */
+.blog-suggest .pill-btn--dark {
+  color: #fff;
+  text-decoration: none;
+}
